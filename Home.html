@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complete Guide to HTML, CSS, and JavaScript</title>
+ <style>
+ body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  padding-top:60px;
+}
+
+header, footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 30px;
+}
+h1
+{
+  color:white;
+}
+ h2, h3 {
+  color: #2c3e50;
+}
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  overflow-x: auto;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+a
+{
+  text-decoration:none;
+  cursor:pointer;
+}
+#menu {
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+  padding: 10px 20px;
+  background-color: #ecf0f1;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  width: 100%;
+  overflow-x: auto; /* This enables horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  scrollbar-width:none;
+}
+#menu::-webkit-scrollbar
+{
+  display:none;
+}
+#menu a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  flex: 0 0 auto; /* Prevent shrinking */
+}
+@media (max-width: 600px) {
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  header, footer {
+    padding: 15px;
+  }
+}
+</style>
+</head>
+<body>
+   <div id="menu">
+  <a href="Home.html">Home</a>
+  <a href="Html_blog.html"> Html</a>
+  <a href="css_blog.html">Css</a>
+  <a href="Js_blog.html">Javascript</a>
+  <a href="#">About us</a>
+  <a href="#">feedback</a>
+  </div>
+  <header>
+    <h1>Complete Guide to HTML, CSS, and JavaScript</h1>
+    <p><strong>Author:</strong> Fardin Hussain | <strong>Date:</strong> April 2025</p>
+    <hr>
+  </header>
+
+  <section>
+    <h2>What is HTML?</h2>
+    <p><strong>HTML</strong> (HyperText Markup Language) is the standard language used to create web pages. It structures the content and elements of a website, acting as the "skeleton" before CSS and JavaScript are added for design and functionality.</p>
+  </section>
+
+  <section>
+    <h2>What is CSS?</h2>
+    <p><strong>CSS</strong> (Cascading Style Sheets) is a language used to describe the look and feel of a web page. It controls the layout, colors, fonts, and spacing of HTML elements.</p>
+  </section>
+
+  <section>
+    <h2>What is JavaScript?</h2>
+    <p><strong>JavaScript</strong> is a programming language that allows you to create dynamic and interactive effects on web pages. It controls behaviors, interactions, and logic in web applications.</p>
+  </section>
+  <footer>
+    <hr>
+    <p>Made with &lt;3 by a passionate Web Developer.</p>
+  </footer>
+</body>
+</html>
