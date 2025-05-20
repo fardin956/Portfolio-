@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complete Guide to HTML</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  padding-top:60px;
+}
+
+header, footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 30px;
+}
+h1
+{
+  color:white;
+}
+ h2, h3 {
+  color: #2c3e50;
+}
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  overflow-x: auto;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+#menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px 10px;
+  background-color: #ecf0f1;
+  position:fixed;
+  top:0;
+  width: 100%;
+  overflow-x: auto; /* This enables horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+}
+#menu a {
+  
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  flex: 0 0 auto; /* Prevent shrinking */
+}
+@media (max-width: 600px) {
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  header, footer {
+    padding: 15px;
+  }
+}
+  </style>
+</head>
+<body>
+   <div id="menu">
+  <a href="Home.html">Home</a>
+  <a href="Html_blog.html">Html</a>
+  <a href="css_blog.html">Css</a>
+  <a href="Js_blog.html">Javascript</a>
+  <a href="#">About us</a>
+  <a href="#">feedback</a>
+  </div>
+  <header>
+    <h1>Complete Guide to HTML</h1>
+    <p><strong>Author:</strong> Fardin Hussain | <strong>Date:</strong> April 2025</p>
+    <hr>
+  </header>
+
+  <section>
+    <h2>What is HTML?</h2>
+    <p><strong>HTML</strong> (HyperText Markup Language) is the standard language used to create web pages. It structures the content and elements of a website, acting as the "skeleton" before CSS and JavaScript are added for design and functionality.</p>
+  </section>
+
+  <section>
+    <h2>Basic Structure of an HTML Document</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <p><strong>Explanation:</strong></p>
+    <ul>
+      <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type (HTML5).</li>
+      <li><code>&lt;html&gt;</code>: Root element of the page.</li>
+      <li><code>&lt;head&gt;</code>: Contains meta info, title, links, scripts.</li>
+      <li><code>&lt;title&gt;</code>: Sets the browser tab title.</li>
+      <li><code>&lt;body&gt;</code>: Contains visible page content.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>HTML Text Formatting Tags</h2>
+    <ul>
+      <li><code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code>: Bold text</li>
+      <li><code>&lt;i&gt;</code> or <code>&lt;em&gt;</code>: Italic text</li>
+      <li><code>&lt;u&gt;</code>: Underlined text</li>
+      <li><code>&lt;mark&gt;</code>: Highlighted text</li>
+      <li><code>&lt;sub&gt;</code>: Subscript</li>
+      <li><code>&lt;sup&gt;</code>: Superscript</li>
+      <li><code>&lt;small&gt;</code>: Smaller text</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <pre>
+&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; and &lt;em&gt;italic&lt;/em&gt; text.&lt;/p&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h2>HTML Headings and Paragraphs</h2>
+    <ul>
+      <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings from largest to smallest.</li>
+      <li><code>&lt;p&gt;</code>: Paragraph tag for blocks of text.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Lists in HTML</h2>
+    <ul>
+      <li><code>&lt;ul&gt;</code>: Unordered list</li>
+      <li><code>&lt;ol&gt;</code>: Ordered list</li>
+      <li><code>&lt;li&gt;</code>: List item</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <pre>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h2>HTML Links</h2>
+    <p><code>&lt;a&gt;</code>: Defines a hyperlink.</p>
+    <pre>
+&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h2>HTML Images</h2>
+    <p><code>&lt;img&gt;</code>: Embeds images.</p>
+    <pre>
+&lt;img src="image.jpg" alt="Description" width="300" /&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h2>Tables in HTML</h2>
+    <ul>
+      <li><code>&lt;table&gt;</code>: Table element</li>
+      <li><code>&lt;tr&gt;</code>: Table row</li>
+      <li><code>&lt;th&gt;</code>: Table header</li>
+      <li><code>&lt;td&gt;</code>: Table data</li>
+    </ul>
+    <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h2>Forms in HTML</h2>
+    <ul>
+      <li><code>&lt;form&gt;</code>: Defines a form</li>
+      <li><code>&lt;input&gt;</code>: Input field</li>
+      <li><code>&lt;label&gt;</code>: Label for input</li>
+      <li><code>&lt;textarea&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;select&gt;</code> also used</li>
+    </ul>
+    <pre>
+&lt;form&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h2>Semantic Tags</h2>
+    <ul>
+      <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code></li>
+      <li><code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code></li>
+      <li><code>&lt;section&gt;</code>, <code>&lt;article&gt;</code></li>
+      <li><code>&lt;aside&gt;</code></li>
+    </ul>
+    <p>These tags help describe the meaning and structure of the content.</p>
+  </section>
+
+  <section>
+    <h2>Multimedia</h2>
+    <h3>Audio</h3>
+    <pre>
+&lt;audio controls&gt;
+  &lt;source src="sound.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+    </pre>
+    <h3>Video</h3>
+    <pre>
+&lt;video width="320" height="240" controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h2>Common HTML Attributes</h2>
+    <ul>
+      <li><strong>id</strong>: Unique identifier for an element</li>
+      <li><strong>class</strong>: Used to apply CSS</li>
+      <li><strong>src</strong>: Specifies image, audio, or video source</li>
+      <li><strong>href</strong>: Hyperlink reference</li>
+      <li><strong>style</strong>: Inline CSS styles</li>
+      <li><strong>title</strong>: Tooltip text</li>
+      <li><strong>alt</strong>: Alternate text for media</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Special Characters in HTML</h2>
+    <ul>
+      <li><code>&amp;lt;</code> → &lt;</li>
+      <li><code>&amp;gt;</code> → &gt;</li>
+      <li><code>&amp;amp;</code> → &amp;</li>
+      <li><code>&amp;quot;</code> → "</li>
+      <li><code>&amp;nbsp;</code> → non-breaking space</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+    <p>HTML is the essential foundation of all web pages. Once you're confident with HTML, you can level up with CSS for styling and JavaScript for interactivity.</p>
+  </section>
+
+  <footer style="text-align:center; background:#2c3e50; color:white; padding:10px;">
+  &copy; 2025 Learn Html - Blog by Fardin Hussain
+</footer>
+</body>
+</html>

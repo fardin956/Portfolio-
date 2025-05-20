@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learn JavaScript - Full Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+      margin: 0;
+    
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+    }
+    section {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #222;
+      color: #eee;
+      padding: 10px;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+    code {
+      color: #d1d1d1;
+      background: #444;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    #menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px 10px;
+  background-color: #ecf0f1;
+  position:fixed;
+  top:0;
+  width: 100%;
+  overflow-x: auto; /* This enables horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  transform: translate(-15px,0px);
+}
+#menu a {
+  
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  flex: 0 0 auto; /* Prevent shrinking */
+}
+  </style>
+</head>
+<body>
+    <div id="menu">
+  <a href="Home.html">Home</a>
+  <a href="Html_blog.html">Html</a>
+  <a href="css_blog.html">Css</a>
+  <a href="Js_blog.html">Javascript</a>
+  <a href="#">About us</a>
+  <a href="#">feedback</a>
+  </div>
+<header>
+  Learn JavaScript - Complete Beginner Blog
+</header>
+
+<section>
+  <h2>What is JavaScript?</h2>
+  <p>
+    JavaScript is a high-level, dynamic programming language used to create interactive and dynamic features on websites. It works alongside HTML and CSS, enabling features like sliders, forms, games, and more.
+  </p>
+</section>
+
+<section>
+  <h2>How JavaScript Works</h2>
+  <p>
+    JavaScript code runs in the browser. It can respond to user actions like clicking, typing, or scrolling. It can also manipulate HTML elements and change CSS styles dynamically.
+  </p>
+</section>
+
+<section>
+  <h2>JavaScript Variables</h2>
+  <p>
+    Variables store data that your program can use or change. Use <code>let</code>, <code>const</code>, or <code>var</code> to declare them.
+  </p>
+  <pre>
+let name = "Alice";
+const age = 18;
+var isStudent = true;
+  </pre>
+</section>
+
+<section>
+  <h2>Data Types</h2>
+  <p>JavaScript supports several data types:</p>
+  <ul>
+    <li><strong>String:</strong> Text values — <code>"Hello"</code></li>
+    <li><strong>Number:</strong> Numeric values — <code>100</code></li>
+    <li><strong>Boolean:</strong> True or false — <code>true</code></li>
+    <li><strong>Array:</strong> List of values — <code>[1, 2, 3]</code></li>
+    <li><strong>Object:</strong> Key-value pairs — <code>{ name: "Ali", age: 20 }</code></li>
+    <li><strong>Null / Undefined:</strong> Empty or unknown values</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What are Properties in JavaScript?</h2>
+  <p>
+    A <strong>property</strong> is a value that belongs to an object. It's like a variable attached to the object.
+  </p>
+  <p><strong>Example:</strong></p>
+  <pre>
+let car = {
+  brand: "Toyota",
+  color: "red",
+  speed: 120
+};
+
+console.log(car.color); // "red"
+  </pre>
+  <p>Here, <code>brand</code>, <code>color</code>, and <code>speed</code> are properties of the object <code>car</code>.</p>
+</section>
+
+<section>
+  <h2>What are Attributes in JavaScript?</h2>
+  <p>
+    Technically, <strong>attributes</strong> belong to HTML elements and are accessed using JavaScript through the DOM.
+  </p>
+  <p><strong>Example:</strong></p>
+  <pre>
+&lt;img id="photo" src="image.jpg" alt="My Photo"&gt;
+
+<script>
+  let img = document.getElementById("photo");
+  console.log(img.getAttribute("src")); // "image.jpg"
+</script>
+  </pre>
+  <p>
+    Here, <code>src</code> and <code>alt</code> are attributes of the <code>&lt;img&gt;</code> element. JavaScript can read and change them using <code>getAttribute()</code> and <code>setAttribute()</code>.
+  </p>
+</section>
+
+<section>
+  <h2>JavaScript Functions</h2>
+  <p>
+    Functions are reusable blocks of code that perform a task. You can call them whenever needed.
+  </p>
+  <pre>
+function greet(name) {
+  console.log("Hello, " + name);
+}
+greet("Ravi");
+  </pre>
+</section>
+
+<section>
+  <h2>Conditionals</h2>
+  <p>Use <code>if</code>, <code>else if</code>, and <code>else</code> to make decisions.</p>
+  <pre>
+let score = 80;
+if (score >= 90) {
+  console.log("Grade A");
+} else if (score >= 75) {
+  console.log("Grade B");
+} else {
+  console.log("Try again");
+}
+  </pre>
+</section>
+
+<section>
+  <h2>Loops</h2>
+  <p>Loops help you run code multiple times.</p>
+  <pre>
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+  </pre>
+</section>
+
+<section>
+  <h2>DOM Manipulation</h2>
+  <p>
+    DOM (Document Object Model) allows you to access and change HTML using JavaScript.
+  </p>
+  <pre>
+document.getElementById("title").style.color = "blue";
+  </pre>
+</section>
+
+<section>
+  <h2>Events</h2>
+  <p>React to user actions like clicks, key presses, or hovers.</p>
+  <pre>
+document.getElementById("btn").addEventListener("click", function() {
+  alert("Button Clicked!");
+});
+  </pre>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>
+    JavaScript brings life to your web pages. Start small, build projects, and practice regularly to master the language.
+  </p>
+</section>
+
+<footer style="text-align:center; background:#2c3e50; color:white; padding:10px;">
+  &copy; 2025 Learn JavaScript - Blog by Fardin Hussain 
+</footer>
+
+</body>
+</html>

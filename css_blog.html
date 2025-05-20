@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learn CSS - Complete Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding:0px;
+     padding-top:60px;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+    }
+    section {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #222;
+      color: #eee;
+      padding: 10px;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+    code {
+      background: #444;
+      color: #ddd;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    #menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 10px 20px;
+  background-color: #ecf0f1;
+  position: fixed;
+  top: 0;
+  left:0;
+  width:100%;
+  overflow-x: auto; /* This enables horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  z-index: 1000;
+
+}
+#menu a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  flex: 0 0 auto; /* Prevent shrinking */
+}
+  </style>
+</head>
+<body>
+  <div id="menu">
+  <a href="Home.html">Home</a>
+  <a href="Html_blog.html">Html</a>
+  <a href="css_blog.html">Css</a>
+  <a href="Js_blog.html">Javascript</a>
+  <a href="#">About us</a>
+  <a class="feedback" href="#">feedback</a>
+  </div>
+<header>
+  Learn CSS - Complete Beginner Blog
+</header>
+
+<section>
+  <h2>What is CSS?</h2>
+  <p>
+    CSS (Cascading Style Sheets) is used to style and layout web pages. It controls how HTML elements look — including colors, sizes, fonts, margins, and even animations.
+  </p>
+</section>
+
+<section>
+  <h2>How to Add CSS</h2>
+  <ul>
+    <li><strong>Inline:</strong> Inside an HTML tag using <code>style=""</code></li>
+    <li><strong>Internal:</strong> Inside a &lt;style&gt; tag in the &lt;head&gt;</li>
+    <li><strong>External:</strong> In a separate .css file</li>
+  </ul>
+  <pre>
+&lt;style&gt;
+  h1 {
+    color: blue;
+  }
+&lt;/style&gt;
+  </pre>
+</section>
+
+<section>
+  <h2>CSS Syntax</h2>
+  <p>
+    CSS uses a selector and a declaration block:
+  </p>
+  <pre>
+selector {
+  property: value;
+}
+  </pre>
+  <p>
+    Example:
+  </p>
+  <pre>
+p {
+  color: red;
+  font-size: 16px;
+}
+  </pre>
+</section>
+
+<section>
+  <h2>What is a CSS Property?</h2>
+  <p>
+    A <strong>property</strong> is the styling feature you want to change. For example: <code>color</code>, <code>font-size</code>, <code>margin</code>, etc.
+  </p>
+  <pre>
+h1 {
+  color: green;      /* Property: color */
+  font-weight: bold; /* Property: font-weight */
+}
+  </pre>
+</section>
+
+<section>
+  <h2>What is a CSS Attribute?</h2>
+  <p>
+    In CSS, the word "attribute" usually refers to HTML attributes that CSS can select using selectors. For example:
+  </p>
+  <pre>
+a[target="_blank"] {
+  color: red;
+}
+  </pre>
+  <p>
+    This targets anchor (&lt;a&gt;) elements with a <code>target="_blank"</code> attribute.
+  </p>
+</section>
+
+<section>
+  <h2>Selectors</h2>
+  <ul>
+    <li><code>*</code> → Universal</li>
+    <li><code>tag</code> → Element selector</li>
+    <li><code>.class</code> → Class selector</li>
+    <li><code>#id</code> → ID selector</li>
+    <li><code>[attr]</code> → Attribute selector</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Colors in CSS</h2>
+  <pre>
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+  </pre>
+</section>
+
+<section>
+  <h2>Text Styling</h2>
+  <pre>
+h1 {
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center;
+}
+  </pre>
+</section>
+
+<section>
+  <h2>Box Model</h2>
+  <p>
+    Every element is a box made up of:
+  </p>
+  <ul>
+    <li><strong>Content</strong></li>
+    <li><strong>Padding</strong></li>
+    <li><strong>Border</strong></li>
+    <li><strong>Margin</strong></li>
+  </ul>
+  <pre>
+div {
+  padding: 10px;
+  border: 2px solid black;
+  margin: 20px;
+}
+  </pre>
+</section>
+
+<section>
+  <h2>Positioning</h2>
+  <ul>
+    <li><code>static</code> (default)</li>
+    <li><code>relative</code></li>
+    <li><code>absolute</code></li>
+    <li><code>fixed</code></li>
+    <li><code>sticky</code></li>
+  </ul>
+  <pre>
+.box {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+  </pre>
+</section>
+
+<section>
+  <h2>Flexbox Basics</h2>
+  <pre>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  </pre>
+</section>
+
+<section>
+  <h2>Grid Basics</h2>
+  <pre>
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+  </pre>
+</section>
+
+<section>
+  <h2>Responsive Design</h2>
+  <p>Use media queries to make layouts responsive:</p>
+  <pre>
+@media (max-width: 600px) {
+  body {
+    background: lightblue;
+  }
+}
+  </pre>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>
+    CSS controls the look and feel of your website. Once you're confident with properties, selectors, and layout systems like Flexbox and Grid, you can build beautiful web pages!
+  </p>
+</section>
+
+<footer style="text-align:center; background:#2c3e50; color:white; padding:10px;">
+  &copy; 2025 Learn CSS - Blog by Fardin Hussain 
+</footer>
+</body>
+</html>
