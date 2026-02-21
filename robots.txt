@@ -1,1 +1,3 @@
-<Content of robot.txt>
+User-agent: *
+Allow: /
+Sitemap: https://fardinhussain.netlify.app/sitemap.xml
